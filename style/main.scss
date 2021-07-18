@@ -1,0 +1,42 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  background: pink;
+}
+
+.bg-black-800 {
+  background-color: #131416;
+}
+
+.mobilmenu_active{
+  display: block;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-400;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
